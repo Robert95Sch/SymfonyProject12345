@@ -42,3 +42,10 @@ deploy:
       - APP_ENV=prod APP_DEBUG=0 php bin/console cache:clear
       - php bin/console assets:install
       - APP_ENV=prod APP_DEBUG=0 php bin/console cache:warmup
+
+# uncomment the following lines to configure cron jobs
+#runtime:
+#  cron-jobs:
+#    - command: my-cron-job-command
+#      schedule: 0 5 * * * # run every day at 5:00
+#      mailto: me@mail.com # optional mail address to which the output of command is send
